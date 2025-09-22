@@ -97,8 +97,12 @@ public void setTanggalPelaksanaan(String tanggalPelaksanaan) {
 - Sedangkan method setter dipakai untuk mengganti atau memberikan nilai baru pada atribut tersebut. Cara ini menjaga agar data tetap aman karena atribut dibuat private, tetapi tetap bisa digunakan lewat method khusus.
 
 **f. Method toString()**
-
-<img width="1131" height="106" alt="image" src="https://github.com/user-attachments/assets/e00fd39a-4d26-4a55-ae14-e2cccc715777" />
+```Java
+@Override
+public String toString() {
+   return String.format("%-30s | %-20s | %-20s", namaFestival, asal, tanggalPelaksanaan);
+}
+```
 
 - Di bagian akhir ada metode toString(). Ini adalah cara untuk mengatur bagaimana sebuah objek ditampilkan kalau dipanggil dengan System.out.println().
 - Dalam kode ini digunakan String.format() untuk membuat tampilan yang rapi seperti tabel nama festival ditaruh di kolom rata kiri dengan lebar 30 karakter, asal di kolom 20 karakter, dan tanggal pelaksanaan di kolom 20 karakter juga. Hasilnya, daftar festival akan tercetak sejajar sehingga lebih mudah dibaca.
@@ -349,7 +353,7 @@ public class mainFestival {
 ```
 Class mainFestival berisi method main sebagai titik awal program. Di dalamnya dibuat objek Scanner untuk membaca input dari user dan objek serviceFestival untuk mengelola data festival. Variabel pilihan disiapkan untuk menampung pilihan menu yang dimasukkan oleh pengguna.
 
-**c. Menu Utama dengan Perulangan do-while
+**c. Menu Utama dengan Perulangan do-while**
 ```Java
 do {
    try {
@@ -366,7 +370,7 @@ do {
 - Program ini akan menampilkan menu utama dengan pilihan 1 sampai 5. Perulangan do-while dipakai agar menu terus ditampilkan sampai pengguna memilih keluar pada opsi nomor 5.
 - Input pilihan dibaca dengan Scanner, lalu input.nextLine() dipanggil untuk menghapus karakter enter setelah input angka. Bagian ini dibungkus try-catch sebagai validasi input supaya jika pengguna salah memasukkan data, program tidak langsung error.
 
-**d. Case 1 (Tambah Festival)
+**d. Case 1 (Tambah Festival)**
 ```Java
 switch (pilihan) {
    case 1:
