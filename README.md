@@ -501,6 +501,29 @@ Bagian ini menangani kesalahan input. Jika pengguna salah memasukkan tipe data (
 Perulangan akan terus berjalan selama pilihan bukan 5. Begitu pengguna memilih keluar, program berhenti dan Scanner akan ditutup.
 
 
+## Alur Program
+
+**Menu Utama**
+
+<img width="374" height="148" alt="image" src="https://github.com/user-attachments/assets/886e7cca-0f31-489e-b88d-b3d3ae267fac" />
+
+Awalnya, program akan menampilkan menu yang akan dipilih oleh pengguna. Di dalam tampilan menu utama berupa daftar pilihan tambah festival, lihat daftar festival, ubah festival, hapus festival, atau keluar dari program. Pengguna diminta memasukkan angka sesuai pilihan menu, yang kemudian disimpan ke dalam variabel pilihan.
+
+**1. Tambah Festival**
+
+<img width="373" height="232" alt="image" src="https://github.com/user-attachments/assets/3b8ff739-7d15-437b-b182-34905fdcb962" />
+
+- Jika memilih menu 1 maka program akan menampilkan submenu untuk memilih jenis festival, yaitu Tradisional atau Seni Pertunjukan. 
+- Pada program ini, pilihan Festival Tradisional berfungsi untuk menambahkan festival yang berkaitan dengan adat dan budaya lokal. Oleh karena itu, selain memasukkan nama, asal, dan tanggal festival, pengguna juga diminta mengisi informasi khusus berupa ritual adat utama yang menjadi ciri khas festival tersebut.
+- Sementara itu, pilihan Festival Seni Pertunjukan digunakan untuk menambahkan festival yang menampilkan berbagai bentuk seni, seperti musik, tari, atau teater. Pada jenis ini, pengguna diminta menambahkan informasi khusus berupa jenis seni yang ditampilkan dalam festival. Dengan demikian, kedua pilihan tersebut membedakan detail informasi yang harus diinput sesuai dengan karakteristik masing-masing festival.
+
+<img width="429" height="339" alt="image" src="https://github.com/user-attachments/assets/a481d512-3388-4a77-a3a5-d9832ad67abd" />
+
+- Jika memilih Tradisional. Selanjutnya, program akan meminta beberapa data festival yang harus diisi, yaitu nama festival, asal festival, tanggal festival, serta ritual adat utama. Setelah semua data berhasil dimasukkan, program akan menampilkan pesan konfirmasi bahwa festival baru telah berhasil ditambahkan ke dalam daftar.
+
+<img width="409" height="337" alt="image" src="https://github.com/user-attachments/assets/67da9f81-1e1a-4bd3-aa07-96422ef22214" />
+
+- Jika memilih jenis festival Seni Pertunjukan dengan memasukkan angka 2. Program akan meminta beberapa data terkait festival, yaitu nama festival, asal festival, tanggal festival, serta jenis seni. Setelah semua informasi dimasukkan, program menampilkan pesan bahwa festival berhasil ditambahkan ke dalam daftar.
 
 
 
