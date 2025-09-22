@@ -468,3 +468,42 @@ Jika memilih menu 4, program akan menampilkan daftar festival dan meminta nomor 
 
 **h. Case 5 (Keluar Program)**
 ```Java
+case 5:
+   System.out.println("Terima kasih! Program telah selesai ^-^");
+   break;
+
+default:
+   System.out.println("Pilihan tidak valid!");
+```
+- Jika memilih menu 5, program akan menampilkan ucapan terima kasih lalu perulangan berhenti.
+- Jika memilih menu selain dari angka 1-5, maka program akan menampilkan pesan bahwa "Pilihan tidak valid!" dan akan langsung melakukan perulangan ke menu.
+
+**i. Exception Handling**
+```Java
+} catch (InputMismatchException e) {
+   System.out.println("Input harus berupa angka!");
+   input.nextLine(); 
+}
+```
+Bagian ini menangani kesalahan input. Jika pengguna salah memasukkan tipe data (misalnya huruf saat diminta angka), maka program akan menampilkan pesan “Input harus berupa angka!” dan membersihkan input agar program bisa lanjut tanpa error.
+
+**j.Perulangan do-while**
+```Java
+   } while (pilihan != 5);
+   
+   input.close();
+}
+```
+Perulangan akan terus berjalan selama pilihan bukan 5. Begitu pengguna memilih keluar, program berhenti dan Scanner akan ditutup.
+
+
+
+
+
+
+
+
+
+
+
+
